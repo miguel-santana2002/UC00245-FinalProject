@@ -1,0 +1,43 @@
+# Arquivos gerados pelo Visual Studio
+
+## Build/Binários
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+bld/
+obj/
+*.exe
+*.pdb
+*.dll
+*.suo
+*.user
+*.aps
+*.o
+*.obj
+*.temp
+*.tmp
+*.vsix
+*.vsproj.user
+*.vshost.*
+
+# Arquivos de Teste
+TestResults/
+*.trx
+
+# Pacotes NuGet
+packages/
+*.nupkg
+*.snupkg
+
+# IDE do Visual Studio (VS)
+.vs/ # Pasta oculta do VS (usada para cache e configurações)
+*.sln.docstates
+*.vshost.*
+*.usersecrets
+
+# Log
+*.log
+
+# Windows
+Thumbs.db
