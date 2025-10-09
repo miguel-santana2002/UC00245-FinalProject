@@ -31,6 +31,7 @@
             this.tc_controller = new System.Windows.Forms.TabControl();
             this.tp_network = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.hc_network = new ProjetoFinal.HeaderControl();
             this.txt_output_network = new System.Windows.Forms.TextBox();
             this.btn_active_ports = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,6 +43,7 @@
             this.tp_system = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_view_processes = new System.Windows.Forms.Button();
+            this.hc_system = new ProjetoFinal.HeaderControl();
             this.txt_output_system = new System.Windows.Forms.TextBox();
             this.btn_check_health = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -55,6 +57,7 @@
             this.txt_port_scan_target = new System.Windows.Forms.TextBox();
             this.txt_port_number = new System.Windows.Forms.TextBox();
             this.btn_logs = new System.Windows.Forms.Button();
+            this.hc_security = new ProjetoFinal.HeaderControl();
             this.txt_output_security = new System.Windows.Forms.TextBox();
             this.btn_port_scan = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -67,11 +70,9 @@
             this.txt_output_maintenance = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.btn_system_shutdown = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
-            this.hc_network = new ProjetoFinal.HeaderControl();
-            this.hc_system = new ProjetoFinal.HeaderControl();
-            this.hc_security = new ProjetoFinal.HeaderControl();
             this.hc_maintenance = new ProjetoFinal.HeaderControl();
+            this.label15 = new System.Windows.Forms.Label();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.tc_controller.SuspendLayout();
             this.tp_network.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -128,6 +129,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(740, 749);
             this.panel1.TabIndex = 9;
+            // 
+            // hc_network
+            // 
+            this.hc_network.BackColor = System.Drawing.Color.Black;
+            this.hc_network.Location = new System.Drawing.Point(452, 4);
+            this.hc_network.Margin = new System.Windows.Forms.Padding(4);
+            this.hc_network.Name = "hc_network";
+            this.hc_network.Size = new System.Drawing.Size(284, 58);
+            this.hc_network.TabIndex = 14;
+            this.hc_network.UsernameText = "";
             // 
             // txt_output_network
             // 
@@ -213,7 +224,7 @@
             this.label3.ForeColor = System.Drawing.Color.Lime;
             this.label3.Location = new System.Drawing.Point(16, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(723, 24);
+            this.label3.Size = new System.Drawing.Size(502, 24);
             this.label3.TabIndex = 7;
             this.label3.Text = "NETWORK DIAGNOSTICS";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -277,6 +288,16 @@
             this.btn_view_processes.UseVisualStyleBackColor = false;
             this.btn_view_processes.Click += new System.EventHandler(this.btn_view_processes_Click);
             // 
+            // hc_system
+            // 
+            this.hc_system.BackColor = System.Drawing.Color.Black;
+            this.hc_system.Location = new System.Drawing.Point(450, 4);
+            this.hc_system.Margin = new System.Windows.Forms.Padding(4);
+            this.hc_system.Name = "hc_system";
+            this.hc_system.Size = new System.Drawing.Size(286, 58);
+            this.hc_system.TabIndex = 14;
+            this.hc_system.UsernameText = "";
+            // 
             // txt_output_system
             // 
             this.txt_output_system.BackColor = System.Drawing.Color.Black;
@@ -325,7 +346,7 @@
             this.label6.ForeColor = System.Drawing.Color.Lime;
             this.label6.Location = new System.Drawing.Point(16, 19);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(723, 24);
+            this.label6.Size = new System.Drawing.Size(527, 24);
             this.label6.TabIndex = 7;
             this.label6.Text = "SYSTEM HEALTH";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -443,6 +464,16 @@
             this.btn_logs.UseVisualStyleBackColor = false;
             this.btn_logs.Click += new System.EventHandler(this.btn_logs_Click);
             // 
+            // hc_security
+            // 
+            this.hc_security.BackColor = System.Drawing.Color.Black;
+            this.hc_security.Location = new System.Drawing.Point(455, 4);
+            this.hc_security.Margin = new System.Windows.Forms.Padding(4);
+            this.hc_security.Name = "hc_security";
+            this.hc_security.Size = new System.Drawing.Size(281, 58);
+            this.hc_security.TabIndex = 14;
+            this.hc_security.UsernameText = "";
+            // 
             // txt_output_security
             // 
             this.txt_output_security.BackColor = System.Drawing.Color.Black;
@@ -491,7 +522,7 @@
             this.label7.ForeColor = System.Drawing.Color.Lime;
             this.label7.Location = new System.Drawing.Point(16, 19);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(723, 24);
+            this.label7.Size = new System.Drawing.Size(555, 24);
             this.label7.TabIndex = 7;
             this.label7.Text = "SECURITY ANALYSIS";
             this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -606,6 +637,16 @@
             this.btn_system_shutdown.UseVisualStyleBackColor = false;
             this.btn_system_shutdown.Click += new System.EventHandler(this.btn_system_shutdown_Click);
             // 
+            // hc_maintenance
+            // 
+            this.hc_maintenance.BackColor = System.Drawing.Color.Black;
+            this.hc_maintenance.Location = new System.Drawing.Point(457, 4);
+            this.hc_maintenance.Margin = new System.Windows.Forms.Padding(4);
+            this.hc_maintenance.Name = "hc_maintenance";
+            this.hc_maintenance.Size = new System.Drawing.Size(279, 58);
+            this.hc_maintenance.TabIndex = 14;
+            this.hc_maintenance.UsernameText = "";
+            // 
             // label15
             // 
             this.label15.BackColor = System.Drawing.Color.Transparent;
@@ -613,50 +654,10 @@
             this.label15.ForeColor = System.Drawing.Color.Lime;
             this.label15.Location = new System.Drawing.Point(16, 19);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(723, 24);
+            this.label15.Size = new System.Drawing.Size(514, 24);
             this.label15.TabIndex = 7;
             this.label15.Text = "SYSTEM MAINTENANCE";
             this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // hc_network
-            // 
-            this.hc_network.BackColor = System.Drawing.Color.Black;
-            this.hc_network.Location = new System.Drawing.Point(521, 4);
-            this.hc_network.Margin = new System.Windows.Forms.Padding(4);
-            this.hc_network.Name = "hc_network";
-            this.hc_network.Size = new System.Drawing.Size(215, 58);
-            this.hc_network.TabIndex = 14;
-            this.hc_network.UsernameText = "";
-            // 
-            // hc_system
-            // 
-            this.hc_system.BackColor = System.Drawing.Color.Black;
-            this.hc_system.Location = new System.Drawing.Point(521, 4);
-            this.hc_system.Margin = new System.Windows.Forms.Padding(4);
-            this.hc_system.Name = "hc_system";
-            this.hc_system.Size = new System.Drawing.Size(215, 58);
-            this.hc_system.TabIndex = 14;
-            this.hc_system.UsernameText = "";
-            // 
-            // hc_security
-            // 
-            this.hc_security.BackColor = System.Drawing.Color.Black;
-            this.hc_security.Location = new System.Drawing.Point(521, 4);
-            this.hc_security.Margin = new System.Windows.Forms.Padding(4);
-            this.hc_security.Name = "hc_security";
-            this.hc_security.Size = new System.Drawing.Size(215, 58);
-            this.hc_security.TabIndex = 14;
-            this.hc_security.UsernameText = "";
-            // 
-            // hc_maintenance
-            // 
-            this.hc_maintenance.BackColor = System.Drawing.Color.Black;
-            this.hc_maintenance.Location = new System.Drawing.Point(521, 4);
-            this.hc_maintenance.Margin = new System.Windows.Forms.Padding(4);
-            this.hc_maintenance.Name = "hc_maintenance";
-            this.hc_maintenance.Size = new System.Drawing.Size(215, 58);
-            this.hc_maintenance.TabIndex = 14;
-            this.hc_maintenance.UsernameText = "";
             // 
             // Frm_MainMenu
             // 
@@ -738,5 +739,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btn_restart_system;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
