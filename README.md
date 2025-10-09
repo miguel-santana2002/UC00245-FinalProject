@@ -24,6 +24,11 @@ The terminal is organized into four distinct tabs:
 ### 🛠️ System Maintenance (Maintenance)
 * **SHUTDOWN / RESTART:** Critical commands to immediately power off or reboot the local system (with mandatory user confirmation).
 
+## Export Functionality (New Feature!)
+All generated reports and diagnostic outputs can be exported for archival and sharing:
+* PDF Export: Directly export the terminal output to a PDF file format.
+* Structured Reporting: Utilizes the iText 7 library for professional, structured PDF generation, ensuring reports are easily readable and ready for printing or digital archival.
+
 ## Styling & UX
 * **Theme:** Retro-futuristic, green-on-black terminal aesthetic.
 * **Custom UI:** Borderless window design with custom drag-and-drop movement functionality.
